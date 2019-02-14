@@ -2,3 +2,48 @@ body {
   padding: 0;
   margin: 0;
 }
+
+footer {
+  height: 777px;
+  width: 100%;
+  min-width: 1200px;
+  background: url("images/footer-bg.jpg");
+}
+
+.footer-nav {
+  display: flex;
+  margin-top: 106px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.nav-block {
+  margin-right: 7.6%;
+  min-width: 163px;
+}
+
+.nav-block:last-child {
+  margin-right: 0;
+  min-width: 400px;
+}
+
+.nav-block-header {
+  font-size: 20pt;
+  color: #3753da;
+  margin-bottom: 48px;
+  text-transform: uppercase;
+}
+
+footer .footer-nav p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 15.2pt;
+  line-height: 30px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
