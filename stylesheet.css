@@ -69,8 +69,13 @@ body {
   margin-left: -4px;
 }
 
-.header-logo span {
-  padding-right: 2.5px;
+.header-logo a:hover {
+  font-size: 34px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .header-categories {
@@ -104,6 +109,10 @@ body {
   color:#fff;
 }
 
+.header-categories-item:hover {
+  text-shadow: 0 0 8px #aef235;
+}
+
 .header-categories-item:last-child {
   margin-right: 0;
 }
@@ -111,9 +120,11 @@ body {
 .header-icons {
   display: inline-block;
   float: right;
+  height: inherit;
 }
 
 .header-social-icons {
+  font-size: 0;
   display: inline-block;
   vertical-align: top;
   width: 295px;
@@ -136,48 +147,84 @@ body {
   display: inline-block;
 }
 
-.header-social-icons-item:first-child {
+.header-social-icons-item {
+  display: inline-block;
+  background-image: url('images/sprite.png');
+}
+
+.facebook-icon {
   margin-left:38px;
+  vertical-align: top;
+  background-position: -25px -71px;
+  width: 15px;
+  height: 27px;
 }
 
-.header-social-icons-item:nth-child(2) {
-  margin-left:45px;
+.twitter-icon {
+  margin-left: 45px;
+  margin-top: 2.5px;
+  vertical-align: top;
+  background-position: -82px -43px;
+  width: 26px;
+  height: 22px;
 }
 
-.header-social-icons-item:nth-child(3) {
-  margin-left:38px;
+.google-icon {
+  margin-left: 38px;
+  margin-top: 2.5px;
+  vertical-align: top;
+  background-position: -55px -43px;
+  width: 27px;
+  height: 22px;
 }
 
-.header-social-icons-item:last-child {
+.instagram-icon {
   margin-left:35px;
+  vertical-align: top;
+  background-position: 0px -43px;
+  width: 28px;
+  height: 28px;
+}
+
+.header-market-icon-block {
+  vertical-align: top;
+  display: inline-block;
+  width: 75px;
+  margin-left: -4px;
+  height: inherit;
+  border-right: 1px solid rgba(255, 255, 255, .22);
 }
 
 .header-market-icon {
   display: inline-block;
+  font-size: 0;
   vertical-align: top;
-  width: 75px;
-  height: 74px;
-  margin-left: -4px;
-  border-right: 1px solid #fff ;
-  border-right-color:rgba(255, 255, 255, .22);
+  width: 25px;
+  height: 27px;
+  margin-top: 23px;
+  margin-left: 22px;
+  background-image: url('images/sprite.png');
+  background-position: 0px -71px;
 }
 
-.header-market-icon img {
-  margin-left:23px;
-  margin-top: 22px;
+.header-search-icon-block {
+  display: inline-block;
+  width: 72px;
+  height: inherit;
 }
 
-.header-serach-icon {
+.header-search-icon {
   margin-left: -4px;
   display: inline-block;
-  width: 73px;
-  height: 74px;
+  vertical-align: top;
+  background-image: url('images/sprite.png');
+  background-position: -28px -43px;
+  width: 27px;
+  height: 26px;
+  margin-top: 23px;
+  margin-left: 20px;
 }
 
-.header-serach-icon img {
-  margin-left:20px;
-  margin-top: 24px;
-}
 
 main {
   position: relative;
@@ -259,7 +306,7 @@ footer .footer-nav p {
   width: 43px;
   height: 43px;
   border-radius: 50%;
-  background: url(images/social-icons.jpg) no-repeat;
+  background: url(images/sprite.png) no-repeat;
   margin-right: 27px;
 }
 
